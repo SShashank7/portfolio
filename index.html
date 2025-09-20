@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashank Mishra | Azure Data Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #0078d4 0%, #004e8c 100%);
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 120, 212, 0.2);
+        }
+        .project-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 25px rgba(0, 120, 212, 0.2);
+        }
+        #vanta-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        .content-overlay {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-blue-600">Azure Data Engineer</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="#skills" class="text-gray-700 hover:text-blue-600 transition">Skills</a>
+                    <a href="#projects" class="text-gray-700 hover:text-blue-600 transition">Projects</a>
+                    <a href="#experience" class="text-gray-700 hover:text-blue-600 transition">Experience</a>
+		    <a href="#achievements" class="text-gray-700 hover:text-blue-600 transition">Achievements</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-700">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white min-h-screen flex items-center relative overflow-hidden">
+        <div id="vanta-bg"></div>
+        <div class="content-overlay max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div data-aos="fade-right">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Shashank Mishra</h1>
+                    <p class="text-xl md:text-2xl mb-8">Azure Data Engineer | 7+ years of experience | Building scalable cloud data platforms on Microsoft Azure</p>
+                    <div class="flex space-x-4">
+    <a href="#contact" class="border-2 border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition">Get in Touch</a>
+    <a href="#projects" class="border-2 border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition">View Projects</a>
+    <a href="Shashank_Mishra_Resume.pdf" download class="border-2 border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition">Download Resume</a>
+</div>
+
+                </div>
+                <div data-aos="fade-left" class="flex justify-center">
+                    <img src="http://static.photos/technology/640x360/42" alt="Data Engineering" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Technical Skills</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Expertise in Azure data services and modern data architecture</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill Card 1 -->
+                <div class="skill-card bg-gray-50 p-8 rounded-xl transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="database" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Cloud & Data Engineering</h3>
+                    <p class="text-gray-600">Microsoft Fabric, Azure Synapse Analytics, Azure Databricks, Azure Data Factory (ADF), Azure Stream Analytics, Azure Functions, Azure Event Hubs, ADLS Gen2, Azure Blob Storage</p>
+                </div>
+                
+                <!-- Skill Card 2 -->
+                <div class="skill-card bg-gray-50 p-8 rounded-xl transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="cloud" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Data Lakehouse & ETL/ELT</h3>
+                    <p class="text-gray-600">Delta Lake, Medallion Architecture (Bronze–Silver–Gold), SSIS, Orchestration (ADF Pipelines, Control-M, Airflow basics), Data Governance & Security, Cost Optimization</p>
+                </div>
+                
+                <!-- Skill Card 3 -->
+                <div class="skill-card bg-gray-50 p-8 rounded-xl transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="code" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Programming & Scripting</h3>
+                    <p class="text-gray-600">Python, PySpark, Pandas, C#, SQL (T-SQL, Spark SQL), Scala (basic)</p>
+                </div>
+                
+                <!-- Skill Card 4 -->
+                <div class="skill-card bg-gray-50 p-8 rounded-xl transition duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="bar-chart-2" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Big Data & Streaming</h3>
+                    <p class="text-gray-600">Hadoop, Apache Kafka, Spark Structured Streaming, YARN, Cosmos DB</p>
+                </div>
+                
+                <!-- Skill Card 5 -->
+                <div class="skill-card bg-gray-50 p-8 rounded-xl transition duration-300" data-aos="fade-up" data-aos-delay="500">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="shield" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Data Modeling & Analytics</h3>
+                    <p class="text-gray-600">Data Modeling (Star/Snowflake), Performance Tuning, Power BI, DAX, Reporting & Dashboarding</p>
+                </div>
+                
+                <!-- Skill Card 6 -->
+                <div class="skill-card bg-gray-50 p-8 rounded-xl transition duration-300" data-aos="fade-up" data-aos-delay="600">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="trending-up" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Performance Optimization</h3>
+                    <p class="text-gray-600">Query tuning, partitioning, indexing, and resource optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Featured Projects</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Real-world solutions delivering business value through data</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/technology/640x360/101" alt="Enterprise Data Warehouse" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Shell Retail Unified Integration</h3>
+                        <p class="text-gray-600 mb-4">Designed and delivered a real-time analytics platform on Microsoft Fabric Lakehouse integrating fuel sales, EV 
+charging, logistics, and carbon emissions. Implemented Medallion Architecture (Bronze/Silver/Gold) with PySpark notebooks, Dataflows Gen2, and Fabric 
+Pipelines (with retries, alerts). Integrated Power BI dashboards enabling 70% faster reporting and real-time sustainability insights for 
+leadership.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Microsoft Fabric</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Lakehouse</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Databricks</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Pyspark</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Delta Lake</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Azure Data Factory</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/technology/640x360/102" alt="Real-time Analytics" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Cost Analysis and Data Integration Tool</h3>
+                        <p class="text-gray-600 mb-4">Migrated an on-prem SSIS-based data warehouse to a modern Azure ecosystem (ADF, Synapse, Databricks). Re-engineered ETL pipelines for Salesforce, Azure SQL, SharePoint, and Excel data sources into a Lakehouse architecture. Improved performance by 30% through partitioning, Delta optimization, and pipeline parallelization. Established monitoring & error handling in ADF to ensure reliability and scalability.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Azure Databricks</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Azure Synapse</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Delta Lake</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Azure Streaming Analytics</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Azure data Factory</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">SSIS</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">SQL Server</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Sharepoint</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">C#</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Pandas</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Azure File Share</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Python</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <img src="http://static.photos/technology/640x360/103" alt="Data Migration" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Enterprise Integration Migration</h3>
+                        <p class="text-gray-600 mb-4">Led a team of 5 engineers to migrate enterprise-wide integrations from MuleSoft and StreamSets to Azure Data 
+Factory, ensuring minimal downtime. Designed scalable ADF pipelines with parameterization, reusable templates, and CI/CD deployment via Azure 
+DevOps. Collaborated with architects and business teams to define migration strategy, cutover plan, and validation 
+framework. Delivered 100% migration within planned timelines, reducing license cost and improving maintainability</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Azure SQL Database</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Azure Data factory</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Github</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Mulesoft</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Key Vault</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Streamsets</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Azure Devops</span>
+                        </div>
+                    </div>
+                </div>
+                
+                                
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Professional Experience</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Delivering data solutions for diverse industries</p>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <!-- Experience 1 -->
+                <div class="mb-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex flex-col md:flex-row justify-between mb-2">
+                        <h3 class="text-xl font-bold text-gray-800">Associate Software Engineer</h3>
+                        <span class="text-blue-600"> April 2023 - Present</span>
+                    </div>
+                    <p class="text-gray-600 font-medium mb-2">Shell</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Real-time Analytics & Cloud Platform Development: Designed and delivered scalable Azure Data solutions, including Lakehouse architectures and Medallion pipelines, enabling real-time insights for fuel sales, EV charging, and carbon emissions tracking.</li>
+                        <li>ETL & Data Pipeline Management: Built and optimized PySpark and Dataflows Gen2 pipelines in Microsoft Fabric and Azure Databricks, ensuring data quality, performance, and cost efficiency.</li>
+                        <li>Power BI Reporting & Business Insights: Developed dashboards providing 70% faster reporting and actionable sustainability insights for leadership and operational teams.</li>
+                        <li>Data Governance & Compliance: Implemented secure, regulatory-aligned solutions with proper monitoring, alerts, and pipeline retries to maintain reliability and governance standards,</li>
+                    </ul>
+                </div>
+                
+                <!-- Experience 2 -->
+                <div class="mb-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex flex-col md:flex-row justify-between mb-2">
+                        <h3 class="text-xl font-bold text-gray-800">Senior Software Engineer</h3>
+                        <span class="text-blue-600">August 2018 - March 2023</span>
+                    </div>
+                    <p class="text-gray-600 font-medium mb-2">Wipro</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Cloud Migration & Integration Projects: Led enterprise-wide migration of on-prem SSIS and MuleSoft/StreamSets pipelines to Azure Data Factory and Synapse, ensuring minimal downtime and seamless transition.</li>
+                        <li>ETL Pipeline Optimization: Re-engineered pipelines for Salesforce, SharePoint, Azure SQL, and Excel, improving performance by 30% via Delta optimization, partitioning, and parallelization.</li>
+                        <li>Team Leadership & Collaboration: Coordinated a team of 5 engineers, managing parameterized ADF pipelines, reusable templates, CI/CD deployment via Azure DevOps, and cutover strategies.</li>
+                        <li>Monitoring, Automation & Governance: Established error handling, automated file transfers, and compliance checks, ensuring scalable, reliable, and secure data workflows.</li>
+                    </ul>
+                </div>
+                
+                            </div>
+        </div>
+    </section>
+
+    <!-- Acheivements Section -->
+    <section id="achievements" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Achievements</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Validating expertise in Azure data technologies</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Cert 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-600 mb-4 mx-auto">
+                        <i data-feather="award" class="w-12 h-12 mx-auto"></i>
+                    </div>
+                    
+                    <p class="text-gray-600">Received the Europe Excellence Extraordinaire Award from the customer.</p>
+                </div>
+                
+                <!-- Cert 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-blue-600 mb-4 mx-auto">
+                        <i data-feather="award" class="w-12 h-12 mx-auto"></i>
+                    </div>
+               
+                    <p class="text-gray-600">Achieved a certificate of appreciation for successfully completing the Mulesoft migration.</p>
+                </div>
+                
+                <!-- Cert 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-blue-600 mb-4 mx-auto">
+                        <i data-feather="award" class="w-12 h-12 mx-auto"></i>
+                    </div>
+                    
+                    <p class="text-gray-600">Secured 1 Gold and 1 Bronze medal for finishing in 1st and 3rd positions in Cricket and Football, respectively.</p>
+                </div>
+                
+                <!-- Cert 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-blue-600 mb-4 mx-auto">
+                        <i data-feather="award" class="w-12 h-12 mx-auto"></i>
+                    </div>
+                    
+                    <p class="text-gray-600">Honored with the "Star of the Month" award 3 times in April, July, and September in 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+                <p class="max-w-2xl mx-auto">Have a data challenge? Let's discuss how Azure can help solve it.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div data-aos="fade-right">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-blue-500 border border-blue-400 focus:outline-none focus:ring-2 focus:ring-white placeholder-blue-300" placeholder="Your name">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-blue-500 border border-blue-400 focus:outline-none focus:ring-2 focus:ring-white placeholder-blue-300" placeholder="your.email@example.com">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg bg-blue-500 border border-blue-400 focus:outline-none focus:ring-2 focus:ring-white placeholder-blue-300" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition w-full">Send Message</button>
+                    </form>
+                </div>
+                <div data-aos="fade-left" class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="text-blue-200 mt-1">
+                            <i data-feather="mail" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Email</h3>
+                            <p>Shashank.Mishra.7@outlook.com</p>
+                        </div>
+                    </div>
+
+		   <div class="flex items-start space-x-4">
+    <div class="text-blue-200 mt-1">
+        <i data-feather="phone" class="w-6 h-6"></i>
+    </div>
+    <div>
+        <h3 class="font-bold text-lg mb-1">Phone</h3>
+        <p>+91-7007373602</p>
+    </div>
+</div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="text-blue-200 mt-1">
+                            <i data-feather="linkedin" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">LinkedIn</h3>
+                            <p>www.linkedin.com/in/sshashankmishra</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="text-blue-200 mt-1">
+                            <i data-feather="github" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">GitHub</h3>
+                            <p>github.com/azuredataengineer</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="text-blue-200 mt-1">
+                            <i data-feather="map-pin" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Location</h3>
+                            <p>Based in Bangalore, India - Open to remote opportunities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Azure Data Engineer</h3>
+                    <p class="text-gray-400">Transforming data into business value with Microsoft Azure technologies.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#skills" class="text-gray-400 hover:text-white transition">Skills</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-white transition">Projects</a></li>
+                        <li><a href="#experience" class="text-gray-400 hover:text-white transition">Experience</a></li>
+			<li><a href="#achievements" class="text-gray-400 hover:text-white transition">Acheivements</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Shashank Mishra | Azure Data Engineer Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Vanta.js globe background
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3fa7d6,
+            backgroundColor: 0x0,
+            size: 0.8
+        });
+
+        // Initialize AOS animation library
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Initialize feather icons
+        feather.replace();
+    </script>
+</body>
+</html>
